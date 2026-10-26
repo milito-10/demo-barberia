@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Barbería El Filo: cortes precisos, barba impecable y estilo propio en El Poblado, Medellín. Reserva tu turno por WhatsApp.">
+  <meta name="theme-color" content="#111111">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Barbería El Filo — Estilo que habla por ti">
+  <meta property="og:description" content="Cortes precisos, barba impecable y estilo propio en El Poblado, Medellín.">
+  <meta property="og:image" content="img/hero.jpg">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self'; connect-src 'self'; frame-src https://www.google.com; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preload" href="fonts/barlow-condensed-700.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Barbería El Filo | Estilo que habla por ti</title>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-scissors" viewBox="0 0 48 48">
+      <circle cx="10" cy="12" r="6"></circle><circle cx="10" cy="36" r="6"></circle>
+      <path d="m15 15 27 27M15 33 42 6M17 24h9"></path>
+    </symbol>
+    <symbol id="icon-razor" viewBox="0 0 48 48">
+      <path d="M8 12h32v8H8zM13 20l6 22h10l6-22M17 27h14M19 34h10"></path>
+      <path d="M12 8h24"></path>
+    </symbol>
+    <symbol id="icon-comb" viewBox="0 0 48 48">
+      <path d="M8 15h32v26H8zM13 15V7m7 8V7m7 8V7m7 8V7m5 8V7"></path>
+    </symbol>
+    <symbol id="icon-beard" viewBox="0 0 48 48">
+      <path d="M12 13c3-5 8-7 12-7s9 2 12 7l4 15-7 11-9 5-9-5-7-11z"></path>
+      <path d="M16 23c2 2 5 3 8 3s6-1 8-3M18 34l6 3 6-3"></path>
+    </symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24">
+      <path d="m12 2 2.8 6.2 6.7.7-5 4.5 1.4 6.6-5.9-3.4-5.9 3.4 1.4-6.6-5-4.5 6.7-.7z"></path>
+    </symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M4 12h15m-6-6 6 6-6 6"></path>
+    </symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24">
+      <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle>
+    </symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path>
+    </symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"></path>
+      <path d="M9 8.5c.4 2.3 2.2 4.1 4.5 4.5l1.1-1.1 2 .9c-.1 1.2-1 2-2.3 2-3.6-.2-6.4-3-6.6-6.6 0-1.3.8-2.2 2-2.3l.9 2z"></path>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24">
+      <path d="m6 6 12 12M18 6 6 18"></path>
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24">
+      <path d="M3 6h18M3 12h18M3 18h18"></path>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#contenido" data-i18n="skipContent">Saltar al contenido</a>
+  <a class="demo-banner" href="https://jcservicios.netlify.app/" target="_blank" rel="noopener noreferrer">
+    <span data-i18n="demoBanner">PÁGINA DE DEMOSTRACIÓN</span>
+    <span class="demo-divider" aria-hidden="true"></span>
+    <span data-i18n="demoBy">Diseñada por Juan Camilo Vergara</span>
+    <svg class="icon icon-small" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+  </a>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#inicio" aria-label="Barbería El Filo, inicio" data-i18n-aria="brandHome">
+      <span class="brand-mark" aria-hidden="true"><svg class="icon"><use href="#icon-razor"></use></svg></span>
+      <span class="brand-text">EL <b>FILO</b><small data-i18n="brandTagline">BARBERÍA · MEDELLÍN</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú" data-i18n-aria="menuOpen">
+      <svg class="icon"><use href="#icon-menu"></use></svg>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal" data-i18n-aria="mainNavigation">
+      <a href="#servicios" data-i18n="navServices">Servicios</a>
+      <a href="#nosotros" data-i18n="navAbout">Nosotros</a>
+      <a href="#galeria" data-i18n="navGallery">Galería</a>
+      <a href="#barberos" data-i18n="navBarbers">Barberos</a>
+      <a href="#ubicacion" data-i18n="navLocation">Ubicación</a>
+      <div class="language-switch" role="group" aria-label="Seleccionar idioma" data-i18n-aria="languageLabel">
+        <button type="button" class="language-button is-active" data-language="es" aria-pressed="true">ES</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" class="language-button" data-language="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+    <a class="button button-small header-book" href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer" data-whatsapp data-i18n="navBook">Reserva ahora</a>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-image image-frame">
+        <img src="img/hero.jpg" alt="Interior de Barbería El Filo, Medellín" data-alt-es="Interior de Barbería El Filo, Medellín" data-alt-en="Interior of Barbería El Filo in Medellín" width="1600" height="1067" fetchpriority="high">
+        <div class="image-fallback" aria-hidden="true"><svg class="icon"><use href="#icon-scissors"></use></svg><span>EL FILO</span></div>
+      </div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span><span data-i18n="heroEyebrow">BARBERÍA DE AUTOR · MEDELLÍN</span></p>
+        <h1 id="hero-title"><span data-i18n="heroLine1">ESTILO QUE</span><br><span class="gold-text" data-i18n="heroLine2">HABLA POR TI.</span></h1>
+        <p class="hero-copy" data-i18n="heroCopy">No es solo un corte. Es llegar con actitud y salir dejando huella.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://wa.me/573000000000?text=Hola%2C%20quiero%20reservar%20un%20turno%20en%20Barber%C3%ADa%20El%20Filo." target="_blank" rel="noopener noreferrer" data-whatsapp data-i18n="heroBook">
+            <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg><span>Reserva tu turno por WhatsApp</span>
+          </a>
+          <a class="text-link" href="#servicios"><span data-i18n="heroExplore">Explora la barbería</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+        </div>
+        <div class="hero-caption"><span class="caption-dot"></span><span data-i18n="heroAddress">EL POBLADO · MEDELLÍN, COLOMBIA</span></div>
+      </div>
+      <div class="hero-side-note" aria-hidden="true" data-i18n="heroSideNote">PRECISIÓN · ACTITUD · ESTILO</div>
+      <a class="scroll-cue" href="#confianza"><span data-i18n="scroll">DESLIZA</span><i></i></a>
+    </section>
+
+    <section class="trust-strip" id="confianza" aria-label="Cifras de Barbería El Filo" data-i18n-aria="trustLabel">
+      <div class="trust-item reveal"><strong><span class="counter" data-target="8500">0</span><span>+</span></strong><span data-i18n="counterCuts">CORTES REALIZADOS</span></div>
+      <div class="trust-divider" aria-hidden="true"></div>
+      <div class="trust-item reveal"><strong><span class="counter" data-target="98">0</span><span>%</span></strong><span data-i18n="counterHappy">CLIENTES FELICES</span></div>
+      <div class="trust-divider" aria-hidden="true"></div>
+      <div class="trust-item reveal"><strong><span class="counter" data-target="8">0</span><span>+</span></strong><span data-i18n="counterYears">AÑOS DE EXPERIENCIA</span></div>
+      <p class="trust-note" data-i18n="trustNote">Datos de ejemplo para esta demostración.</p>
+    </section>
+
+    <section class="section services-section" id="servicios">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow"><span data-i18n="servicesEyebrow">ELIGE TU EXPERIENCIA</span></p><h2 data-i18n="servicesTitle">SERVICIOS <span class="gold-text">CON CARÁCTER.</span></h2></div>
+        <p class="section-intro" data-i18n="servicesIntro">Un buen corte cambia cómo te ves. Uno impecable cambia cómo entras a cualquier lugar.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-top"><span class="service-icon"><svg class="icon"><use href="#icon-scissors"></use></svg></span><span class="service-index">01</span></div>
+          <h3 data-i18n="serviceClassic">Corte clásico</h3><p data-i18n="serviceClassicDesc">Precisión, textura y acabado a tu medida.</p>
+          <div class="service-bottom"><strong data-i18n="priceClassic">$35.000</strong><button class="service-book" type="button" data-reserve-service="classic" data-i18n="bookService">Reservar <span>↗</span></button></div>
+        </article>
+        <article class="service-card featured reveal">
+          <span class="popular-tag" data-i18n="mostOrdered">MÁS PEDIDO</span>
+          <div class="service-top"><span class="service-icon"><svg class="icon"><use href="#icon-beard"></use></svg></span><span class="service-index">02</span></div>
+          <h3 data-i18n="serviceCombo">Corte + barba</h3><p data-i18n="serviceComboDesc">El combo que pone todo en su lugar.</p>
+          <div class="service-bottom"><strong data-i18n="priceCombo">$55.000</strong><button class="service-book" type="button" data-reserve-service="combo" data-i18n="bookService">Reservar <span>↗</span></button></div>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-top"><span class="service-icon"><svg class="icon"><use href="#icon-razor"></use></svg></span><span class="service-index">03</span></div>
+          <h3 data-i18n="serviceBeard">Arreglo de barba</h3><p data-i18n="serviceBeardDesc">Diseño, definición y toalla caliente.</p>
+          <div class="service-bottom"><strong data-i18n="priceBeard">$28.000</strong><button class="service-book" type="button" data-reserve-service="beard" data-i18n="bookService">Reservar <span>↗</span></button></div>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-top"><span class="service-icon"><svg class="icon"><use href="#icon-comb"></use></svg></span><span class="service-index">04</span></div>
+          <h3 data-i18n="serviceBrows">Perfilado de cejas</h3><p data-i18n="serviceBrowsDesc">Un detalle preciso que hace la diferencia.</p>
+          <div class="service-bottom"><strong data-i18n="priceBrows">$15.000</strong><button class="service-book" type="button" data-reserve-service="brows" data-i18n="bookService">Reservar <span>↗</span></button></div>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-top"><span class="service-icon"><svg class="icon"><use href="#icon-razor"></use></svg></span><span class="service-index">05</span></div>
+          <h3 data-i18n="serviceColor">Tinte / color</h3><p data-i18n="serviceColorDesc">Color con personalidad, acabado profesional.</p>
+          <div class="service-bottom"><strong data-i18n="priceFrom">$50.000+</strong><button class="service-book" type="button" data-reserve-service="color" data-i18n="bookService">Reservar <span>↗</span></button></div>
+        </article>
+        <article class="service-card vip-card reveal">
+          <div class="service-top"><span class="service-icon"><svg class="icon"><use href="#icon-star"></use></svg></span><span class="service-index">06</span></div>
+          <h3 data-i18n="serviceVip">Paquete completo VIP</h3><p data-i18n="serviceVipDesc">Corte, barba, toalla caliente y mascarilla facial.</p>
+          <div class="service-bottom"><strong data-i18n="priceVip">$85.000</strong><button class="service-book" type="button" data-reserve-service="vip" data-i18n="bookService">Reservar <span>↗</span></button></div>
+        </article>
+      </div>
+      <p class="price-note" data-i18n="priceNote">Precios de demostración · Valores sujetos a consulta según estilo y longitud.</p>
+    </section>
+
+    <section class="why-section" id="nosotros">
+      <div class="why-photo image-frame reveal">
+        <img src="img/local.jpg" alt="Espacio interior de ejemplo de Barbería El Filo" data-alt-es="Espacio interior de ejemplo de Barbería El Filo" data-alt-en="Sample interior of Barbería El Filo" width="1000" height="1200" loading="lazy" decoding="async">
+        <div class="image-fallback" aria-hidden="true"><svg class="icon"><use href="#icon-comb"></use></svg><span data-i18n="localFallback">UN ESPACIO HECHO PARA TI</span></div>
+        <div class="photo-stamp"><span>EL</span><b>FILO</b><small data-i18n="photoSince">DESDE 2018</small></div>
+      </div>
+      <div class="why-content">
+        <p class="eyebrow reveal" data-i18n="whyEyebrow">MÁS QUE UNA BARBERÍA</p>
+        <h2 class="reveal" data-i18n="whyTitle">TU SILLA.<br><span class="gold-text">TU MOMENTO.</span></h2>
+        <p class="why-copy reveal" data-i18n="whyCopy">Un lugar para bajar el ritmo, conversar sin afán y salir con la versión más segura de ti.</p>
+        <div class="why-list">
+          <article class="why-point reveal"><span class="why-number">01</span><div><h3 data-i18n="whyExperts">Barberos expertos</h3><p data-i18n="whyExpertsDesc">Técnica, criterio y atención a cada detalle.</p></div></article>
+          <article class="why-point reveal"><span class="why-number">02</span><div><h3 data-i18n="whyComfort">Ambiente cómodo</h3><p data-i18n="whyComfortDesc">Buena música, buen café y cero afán.</p></div></article>
+          <article class="why-point reveal"><span class="why-number">03</span><div><h3 data-i18n="whyProducts">Productos de calidad</h3><p data-i18n="whyProductsDesc">Marcas profesionales que cuidan tu estilo.</p></div></article>
+          <article class="why-point reveal"><span class="why-number">04</span><div><h3 data-i18n="whyEnglish">We speak English</h3><p data-i18n="whyEnglishDesc">Welcome in. We’ll help you feel at home.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow" data-i18n="galleryEyebrow">DETALLES QUE SE NOTAN</p><h2 data-i18n="galleryTitle">EL TRABAJO <span class="gold-text">HABLA.</span></h2></div>
+        <p class="section-intro" data-i18n="galleryIntro">Una muestra de estilos. Haz clic en cualquier imagen para verla con más detalle.</p>
+      </div>
+      <div class="gallery-grid">
+        <button class="gallery-tile gallery-tile-tall reveal" type="button" data-lightbox="img/corte-1.jpg" data-alt-es="Corte degradado de ejemplo con acabado limpio" data-alt-en="Sample fade haircut with a clean finish" aria-label="Ampliar foto: corte degradado" data-i18n-aria="galleryOpen1">
+          <span class="image-frame"><img src="img/corte-1.jpg" alt="Corte degradado de ejemplo con acabado limpio" width="800" height="1000" loading="lazy" decoding="async"><span class="image-fallback" aria-hidden="true"><svg class="icon"><use href="#icon-scissors"></use></svg><span data-i18n="galleryFallback1">FADE / 01</span></span></span><span class="gallery-caption"><b data-i18n="galleryCaption1">01 / DEGRADADO</b><span>↗</span></span>
+        </button>
+        <button class="gallery-tile reveal" type="button" data-lightbox="img/corte-2.jpg" data-alt-es="Corte texturizado de ejemplo" data-alt-en="Sample textured haircut" aria-label="Ampliar foto: corte texturizado" data-i18n-aria="galleryOpen2">
+          <span class="image-frame"><img src="img/corte-2.jpg" alt="Corte texturizado de ejemplo" width="800" height="700" loading="lazy" decoding="async"><span class="image-fallback" aria-hidden="true"><svg class="icon"><use href="#icon-comb"></use></svg><span data-i18n="galleryFallback2">TEXTURA / 02</span></span></span><span class="gallery-caption"><b data-i18n="galleryCaption2">02 / TEXTURA</b><span>↗</span></span>
+        </button>
+        <button class="gallery-tile gallery-tile-wide reveal" type="button" data-lightbox="img/barba.jpg" data-alt-es="Arreglo de barba de ejemplo con líneas definidas" data-alt-en="Sample beard trim with defined lines" aria-label="Ampliar foto: barba definida" data-i18n-aria="galleryOpen3">
+          <span class="image-frame"><img src="img/barba.jpg" alt="Arreglo de barba de ejemplo con líneas definidas" width="1000" height="700" loading="lazy" decoding="async"><span class="image-fallback" aria-hidden="true"><svg class="icon"><use href="#icon-beard"></use></svg><span data-i18n="galleryFallback3">BARBA / 03</span></span></span><span class="gallery-caption"><b data-i18n="galleryCaption3">03 / BARBA</b><span>↗</span></span>
+        </button>
+        <button class="gallery-tile reveal" type="button" data-lightbox="img/corte-3.jpg" data-alt-es="Corte clásico de ejemplo, perfil lateral" data-alt-en="Sample classic haircut, side profile" aria-label="Ampliar foto: corte clásico" data-i18n-aria="galleryOpen4">
+          <span class="image-frame"><img src="img/corte-3.jpg" alt="Corte clásico de ejemplo, perfil lateral" width="800" height="700" loading="lazy" decoding="async"><span class="image-fallback" aria-hidden="true"><svg class="icon"><use href="#icon-scissors"></use></svg><span data-i18n="galleryFallback4">CLÁSICO / 04</span></span></span><span class="gallery-caption"><b data-i18n="galleryCaption4">04 / CLÁSICO</b><span>↗</span></span>
+        </button>
+        <button class="gallery-tile reveal" type="button" data-lightbox="img/corte-4.jpg" data-alt-es="Corte contemporáneo de ejemplo" data-alt-en="Sample contemporary haircut" aria-label="Ampliar foto: corte contemporáneo" data-i18n-aria="galleryOpen5">
+          <span class="image-frame"><img src="img/corte-4.jpg" alt="Corte contemporáneo de ejemplo" width="800" height="700" loading="lazy" decoding="async"><span class="image-fallback" aria-hidden="true"><svg class="icon"><use href="#icon-razor"></use></svg><span data-i18n="galleryFallback5">CONTEMPORÁNEO / 05</span></span></span><span class="gallery-caption"><b data-i18n="galleryCaption5">05 / CONTEMPORÁNEO</b><span>↗</span></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="barbers-section" id="barberos">
+      <div class="section section-heading reveal">
+        <div><p class="eyebrow" data-i18n="barbersEyebrow">MANOS EXPERTAS. BUENA ENERGÍA.</p><h2 data-i18n="barbersTitle">CONOCE AL <span class="gold-text">EQUIPO.</span></h2></div>
+        <p class="section-intro" data-i18n="barbersIntro">Cada estilo tiene su especialista. Elige el tuyo y reserva directamente.</p>
+      </div>
+      <div class="barbers-grid">
+        <article class="barber-card reveal"><div class="barber-avatar" aria-hidden="true"><span>JM</span><img src="img/barbero-juan.jpg" alt="" width="320" height="320" loading="lazy" decoding="async"><svg class="icon"><use href="#icon-scissors"></use></svg></div><span class="barber-role" data-i18n="barberLead">BARBERO PRINCIPAL</span><h3>Juan Moreno</h3><p data-i18n="barberJuanSpecialty">Degradados &amp; diseño</p><button class="button button-outline barber-book" type="button" data-reserve-barber="juan" data-i18n="bookWith">Reserva con Juan</button></article>
+        <article class="barber-card reveal"><div class="barber-avatar avatar-alt" aria-hidden="true"><span>DR</span><img src="img/barbero-daniel.jpg" alt="" width="320" height="320" loading="lazy" decoding="async"><svg class="icon"><use href="#icon-razor"></use></svg></div><span class="barber-role" data-i18n="barberSpecialist">ESPECIALISTA EN BARBA</span><h3>Daniel Ríos</h3><p data-i18n="barberDanielSpecialty">Barba &amp; cortes clásicos</p><button class="button button-outline barber-book" type="button" data-reserve-barber="daniel" data-i18n="bookWithDaniel">Reserva con Daniel</button></article>
+        <article class="barber-card reveal"><div class="barber-avatar avatar-third" aria-hidden="true"><span>SL</span><img src="img/barbero-santiago.jpg" alt="" width="320" height="320" loading="lazy" decoding="async"><svg class="icon"><use href="#icon-comb"></use></svg></div><span class="barber-role" data-i18n="barberCreative">BARBERO CREATIVO</span><h3>Santiago López</h3><p data-i18n="barberSantiagoSpecialty">Textura &amp; color</p><button class="button button-outline barber-book" type="button" data-reserve-barber="santiago" data-i18n="bookWithSantiago">Reserva con Santiago</button></article>
+      </div>
+    </section>
+
+    <section class="testimonial-section" aria-labelledby="testimonial-title">
+      <div class="testimonial-inner reveal">
+        <p class="eyebrow" data-i18n="testimonialsEyebrow">PALABRA DE CLIENTE</p>
+        <h2 id="testimonial-title" class="sr-only" data-i18n="testimonialsTitle">Lo que dicen de nosotros</h2>
+        <div class="stars" aria-label="5 de 5 estrellas" data-i18n-aria="starRating">★★★★★</div>
+        <blockquote id="testimonial-quote" aria-live="polite">“Salí con el corte que llevaba meses buscando. La atención, la música y el detalle: todo de otro nivel.”</blockquote>
+        <p class="testimonial-author"><span id="testimonial-name">— Andrés M.</span><span class="sample-label" data-i18n="sampleReview">(testimonio de ejemplo)</span></p>
+        <div class="carousel-controls">
+          <button class="carousel-arrow" type="button" data-testimonial-step="-1" aria-label="Testimonio anterior" data-i18n-aria="previousTestimonial">←</button>
+          <div class="carousel-dots" role="group" aria-label="Seleccionar testimonio" data-i18n-aria="testimonialPages"></div>
+          <button class="carousel-arrow" type="button" data-testimonial-step="1" aria-label="Siguiente testimonio" data-i18n-aria="nextTestimonial">→</button>
+        </div>
+      </div>
+      <span class="testimonial-mark" aria-hidden="true">“</span>
+    </section>
+
+    <section class="section faq-section" id="preguntas">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow" data-i18n="faqEyebrow">ANTES DE SENTARTE EN LA SILLA</p><h2 data-i18n="faqTitle">PREGUNTAS <span class="gold-text">FRECUENTES.</span></h2></div>
+        <p class="section-intro" data-i18n="faqIntro">¿Tienes dudas? Aquí te ayudamos. Si necesitas algo más, escríbenos.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item reveal"><summary data-i18n="faqAppointment">¿Necesito cita para ir?</summary><p data-i18n="faqAppointmentAnswer">Recomendamos reservar para asegurar tu espacio y elegir barbero. También recibimos clientes sin cita según disponibilidad.</p></details>
+        <details class="faq-item reveal"><summary data-i18n="faqDuration">¿Cuánto dura un corte?</summary><p data-i18n="faqDurationAnswer">Un corte clásico toma entre 30 y 45 minutos. Los servicios combinados o VIP pueden tomar alrededor de 60 a 90 minutos.</p></details>
+        <details class="faq-item reveal"><summary data-i18n="faqPayment">¿Qué medios de pago aceptan?</summary><p data-i18n="faqPaymentAnswer">Aceptamos efectivo, tarjetas y transferencias por Nequi o Bancolombia. (Información de ejemplo, confirma al reservar.)</p></details>
+        <details class="faq-item reveal"><summary data-i18n="faqSunday">¿Atienden los domingos?</summary><p data-i18n="faqSundayAnswer">Abrimos de lunes a sábado. Los domingos y festivos descansamos para volver con toda la energía.</p></details>
+        <details class="faq-item reveal"><summary data-i18n="faqEnglish">¿Hablan inglés?</summary><p data-i18n="faqEnglishAnswer">Yes! We welcome international clients and can help you choose your style in English.</p></details>
+      </div>
+    </section>
+
+    <section class="location-section" id="ubicacion">
+      <div class="location-content reveal">
+        <p class="eyebrow" data-i18n="locationEyebrow">PÁSATE POR EL POBLADO</p>
+        <h2 data-i18n="locationTitle">AQUÍ TE <span class="gold-text">ESPERAMOS.</span></h2>
+        <p class="address-label" data-i18n="addressLabel">Dirección de ejemplo</p>
+        <p class="location-address"><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg><span data-i18n="address">Carrera 35 # 8A-50, El Poblado<br>Medellín, Antioquia</span></p>
+        <div class="hours-block"><h3><svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg><span data-i18n="hoursTitle">HORARIOS</span></h3><p data-i18n="hoursWeek">Lunes – viernes <span>9:00 a. m. – 8:00 p. m.</span></p><p data-i18n="hoursSaturday">Sábados <span>9:00 a. m. – 6:00 p. m.</span></p><p data-i18n="hoursSunday">Domingos <span>Cerrado</span></p></div>
+        <a class="button button-primary" href="https://www.google.com/maps/search/?api=1&query=El+Poblado%2C+Medell%C3%ADn" target="_blank" rel="noopener noreferrer"><span data-i18n="openMaps">Cómo llegar</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe title="Mapa de ubicación de ejemplo en El Poblado, Medellín" data-title-es="Mapa de ubicación de ejemplo en El Poblado, Medellín" data-title-en="Sample location map in El Poblado, Medellín" src="https://www.google.com/maps?q=Carrera%2035%20%238A-50%2C%20El%20Poblado%2C%20Medell%C3%ADn&output=embed" width="600" height="450" loading="lazy" referrerpolicy="no-referrer" allowfullscreen></iframe>
+        <span class="map-label"><span class="caption-dot"></span><span data-i18n="mapLabel">EL POBLADO · MEDELLÍN</span></span>
+      </div>
+    </section>
+
+    <section class="contact-cta" id="contacto">
+      <img class="contact-photo" src="img/cta.jpg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+      <div class="contact-pattern" aria-hidden="true"></div>
+      <p class="eyebrow reveal" data-i18n="ctaEyebrow">TU PRÓXIMO BUEN CORTE ESTÁ A UN MENSAJE</p>
+      <h2 class="reveal" data-i18n="ctaTitle">¿LISTO PARA<br><span class="gold-text">EL CAMBIO?</span></h2>
+      <p class="reveal" data-i18n="ctaCopy">Elige tu horario. Nosotros ponemos el filo.</p>
+      <a class="button button-primary cta-button reveal" href="https://wa.me/573000000000?text=Hola%2C%20quiero%20reservar%20un%20turno%20en%20Barber%C3%ADa%20El%20Filo." target="_blank" rel="noopener noreferrer" data-whatsapp>
+        <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg><span data-i18n="ctaBook">Reserva tu turno por WhatsApp</span>
+      </a>
+      <p class="contact-phone"><span data-i18n="callUs">O llámanos</span> · <a href="tel:+573000000000">+57 300 000 0000</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#inicio">
+      <span class="brand-mark" aria-hidden="true"><svg class="icon"><use href="#icon-razor"></use></svg></span>
+      <span class="brand-text">EL <b>FILO</b><small data-i18n="brandTagline">BARBERÍA · MEDELLÍN</small></span>
+    </a>
+    <p data-i18n="footerNote">Estilo que habla por ti. Medellín, Colombia.</p>
+    <div class="footer-meta">
+      <span class="footer-demo" data-i18n="footerDemo">SITIO DE DEMOSTRACIÓN · DATOS DE EJEMPLO · FOTOS: UNSPLASH</span>
+      <a class="footer-credit" href="https://jcservicios.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="footerCredit">Página de demostración – diseñada por Juan Camilo Vergara</a>
+    </div>
+    <a class="back-top" href="#top" aria-label="Volver arriba" data-i18n-aria="backTop">↑</a>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/573000000000?text=Hola%2C%20quiero%20reservar%20un%20turno%20en%20Barber%C3%ADa%20El%20Filo." target="_blank" rel="noopener noreferrer" aria-label="Reserva tu turno por WhatsApp" data-whatsapp data-i18n-aria="floatingWhatsApp">
+    <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg><span data-i18n="floatingBook">Reserva tu turno</span>
+  </a>
+
+  <dialog class="lightbox" aria-label="Vista ampliada de la imagen" data-i18n-aria="lightboxLabel">
+    <button class="lightbox-close" type="button" aria-label="Cerrar imagen" data-i18n-aria="closeImage"><svg class="icon"><use href="#icon-close"></use></svg></button>
+    <div class="lightbox-visual">
+      <img alt="" width="1200" height="900" class="is-loading">
+      <div class="image-fallback lightbox-fallback" aria-hidden="true"><svg class="icon"><use href="#icon-scissors"></use></svg><span data-i18n="lightboxFallback">ESTILO CON CARÁCTER</span></div>
+    </div>
+    <p class="lightbox-caption"></p>
+  </dialog>
+</body>
+</html>
